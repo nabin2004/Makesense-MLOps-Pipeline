@@ -5,3 +5,8 @@ data_ingestion:
   source_URL: "https://example.com/data.csv"
   local_data_file: "data.csv"
   unzip_dir: "artifacts/data_ingestion"
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/dataset
+  tokenizer_name: google/tokenizer_name
